@@ -1,0 +1,204 @@
+<!-- IS 270 Final Project
+Greg Blodgett, Ethan Bond, Joe Faith, HyeJin Moon, & David Taylor -->
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <link rel='stylesheet' type='text/css' href='css/airportStyles.css'>
+  <link rel='stylesheet' href='css/animations.css'>
+  <link rel='icon' href='images/logo.png'>
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Gentium+Basic|Libre+Baskerville|Trirong:600" rel="stylesheet">
+  <title>BWA</title>
+  <meta charset='utf-8'>
+  <meta content='width=device-width, initial-scale=1' name='viewport' />
+  <meta name="author" content="Buffalo Wings Airport">
+  <meta name="description" content="Jacksonville's Premier International Airport">
+  <meta name="keywords" content="Airport, Airfare, Flights, Buffalo Wings, Buffalo Wings Airport, Jacksonville, Jacksonville Florida, Airport in Jacksonville Florida, International Flights,
+  About Us, Industry Leading Aircraft, Lower Emmissions, Harding Students, Vibrant Hub">
+</head>
+<body>
+  <header>
+    <div class='generalTitle'>
+      <a href='index.html'>Buffalo Wings Airport</a>
+    </div>
+  </header>
+  <nav>
+    <div class='mobile'>
+      <button class='navbar-toggler first-button' type='button' data-toggle='collapse' onclick=toggleNav()>
+        <div class='animated-icon1'>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+      <div id='collapse' style='display: none;'>
+        <ul>
+          <li class='full-width'>
+            <a class='nav-link' href='index.html'>Home</a>
+          </li>
+          <li class='full-width'>
+            <a class='nav-link' href='flightBooking.html'>Flight and Booking</a>
+          </li>
+          <li class='full-width'>
+            <a class='nav-link' href='airportGuide.html'>Airport Guide</a>
+          </li>
+          <li class='full-width'>
+            <a class='nav-link' href='parking.html'>Parking and Transportation</a>
+          </li>
+          <li class='full-width'>
+            <a class='nav-link' href='about.html'>About Buffalo Wings</a>
+          </li>
+          <li class="full-width">
+            <a class="nav-link" href="Customer_Service.html">Customer Service</a>
+          </li>
+        </ul>
+      </div>
+      <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+      <script>
+        $(document).ready(function () {
+          $('.first-button').on('click', function () {
+              $('.animated-icon1').toggleClass('open');
+          });
+          $('.second-button').on('click', function () {
+            $('.animated-icon2').toggleClass('open');
+          });
+          $('.third-button').on('click', function () {
+            $('.animated-icon3').toggleClass('open');
+          });
+        });
+        function toggleNav() {
+          if(document.getElementById('collapse').style.display === 'none') {
+            document.getElementById('collapse').style.display = 'block';
+          } else {
+            document.getElementById('collapse').style.display = 'none';
+          }
+        }
+      </script>
+    </div>
+    <div class='desktop'>
+      <ul>
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='flightBooking.html'>Flight and Booking</a></li>
+        <li><a href='airportGuide.html'>Airport Guide</a></li>
+        <li><a href='parking.html'>Parking and Transportation </a></li>
+        <li><a href='about.html'>About Buffalo Wings</a></li>
+        <li><a href="Customer_Service.html">Customer Service</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class='parallax plxAbout desktop'></div>
+    <img src='images/airplane.jpg' alt='airplane' class='mobileImg mobile' />
+    <div>
+      <p class='guideTitle'>About BWA</p>
+      <p class='guideDesc'>Buffalo Wings Airport(BWA) was recently built by a group of students at Harding 
+        University, in Spring of 2019. The founding members of BWA were Greg Blodgett, Ethan Bond, Joe Faith, HyeJin Moon, & 
+        David Taylor.</p>
+      <p class='guideTitle'>About the Founders</p>
+      <p class='guideDesc'>We just took a very small step to our lifelong journey to be the world's leading airport.
+      In order to insure your positive experience at our airport, BWA provides a variety of services that will accommodate 
+      your needs, starting with flight booking, parking, rental services, to exquisite restaurants that you can try while 
+      you wait in the airport. We hope you enjoy your time at our airport. We will make continual efforts to make your travel 
+      a memorable one. </p>
+    </div>
+    <hr class='hrhalf' />
+    <br class='desktop'/>
+    <div class="boxes">
+      <div class="goal">
+        <img src="images/vision.jpg" alt="vision" class='desktop' />
+        <p class='guideTitle'>Our Vision</p>
+        <p class='guideDesc'>To reflect and serve the community, inspire the industry, and advance the region's role as a world 
+          leader.</p>
+      </div>
+      <div class="goal">
+        <img src="images/mission.jpg" alt="mission" class='desktop' />
+        <p class='guideTitle'>Our Mission</p>
+        <p class='guideDesc'>To be the world's leading airport company, growing a safe, secure and vibrant air hub in Jacksonville, Florida and 
+          enhancing the communities we serve worldwide. </p>
+      </div>
+      <br />
+    </div>
+    <hr class='hrhalf' />
+    <div class='custService'>
+      <p class='guideTitle'>Frequently Asked Questions</p>
+      <br />
+      <button class="collapsible">Left Baggage</button>
+      <div class="content">
+        <p>Did you lose your baggage at the airport? Don't worry, We have Lost & Found center just for that reason. 
+          Keep scrolling down to find more information.</p>
+      </div>
+      <button class="collapsible">Baggage Restrictions</button>
+      <div class="content">
+        <p>To protect you and your loved ones when traveling, we ask you not to bring any items that might cause harm. 
+          Here is the list of prohibited items:</p>
+        <ul>
+          <li>Firearms of any kind, including replicas and toys</li>
+          <li>Pointed/edged weapons or sharp objects</li>
+          <li>Blunt objects(ex:bats, skateboards and paddles)</li>
+          <li>Chemical and toxic substances, as well as dangerous goods</li>
+          <li>Corrosive substances(ex: batteries, mercury or drain cleaners)</li>
+        </ul>
+        <br />
+      </div>
+      <button class="collapsible">Connecting Flights</button>
+      <div class="content">
+      <p>This information is for international flights only.</p>
+      <p>If you have connecting flights as part of your ticket, you do not need to clear the immigration again.
+      However, if you have purchased your tickets separately and have flights from different airlines, you would need to clear the arrival immigration. After you have done this procedure, you can collect your checked-in baggages and proceed to check in for your next flight. </p>
+      <p> Please check with your airline agent for your flight information.</p>
+      </div>
+    </div>
+    <br />
+    <hr class='hrhalf' />
+    <script>var coll = document.getElementsByClassName("collapsible");
+      var i;
+    
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+        });
+      }
+    </script>
+    <div class='leftSide'>
+      <img src="images/storage.jpg" alt="storage" class='desktop' />
+      <p class='guideTitle'>Lost & Found</p>
+      <p class='guideDesc' style='text-align: center'>
+        Did you lose an item or bag?  Let us help you find it! <br />
+        For items lost at the airport: <a href='tel:1234567890' style='display: inline;'>(123)456-7890</a><br />
+        For items lost in the plane, visit our <a href='flightBooking.html' style='display: inline;'>booking</a> page to<br class='mobile' />
+        see a list of airlines we host.</p>
+      <br />
+      <img src="images/booking.jpg" alt="booking" class='desktop' />
+      <p class='guideTitle'>Flight Booking</p>
+      <p class='guideDesc' style='text-align: center'>
+        Yes, you can book your flights on our website!<br />
+        You can visit our booking page <a href='flightBooking.html' style='display: inline;'>here</a>.</p>
+    </div>
+    <br class='mobile' />
+    <div class='rightSide'>
+      <img src="images/cars.jpg" alt="cars" class='desktop' />
+      <p class='guideTitle'>Parking</p>
+      <p class='guideDesc' style='text-align: center'>
+        We offer several options for parking. <br class='mobile'/>If you are interested in finding
+        out more, click <a href='parking.html' style='display: inline'>here</a>.</p>
+      <br />
+      <img src="images/phone.jpg" alt="phone" class='desktop' />
+      <p class='guideTitle'>Customer Service</p>
+      <p class='guideDesc' style='text-align: center'>We care about our customers, and your opinion is very important to us.
+        If you have any questions or suggestions, you can let us know at:<br />
+      Phone: <a href='tel:1234567890' style='display: inline; text-align: center;'>(123)456-7890</a>
+      Email: <a href='mailto:bwa@harding.edu' style='display: inline;'>bwa@harding.edu</a></p>
+      <br /><br class='mobile' />
+    </div>
+  </main>
+	<footer>
+		&copy; Buffalo Wings Airport & Harding University
+	</footer>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!-- IS 270 Final Project
+Greg Blodgett, Ethan Bond, Joe Faith, HyeJin Moon, & David Taylor -->
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <link rel='stylesheet' type='text/css' href='css/airportStyles.css'>
+  <link rel='stylesheet' href='css/animations.css'>
+  <link rel='icon' href='images/logo.png'>
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Gentium+Basic|Libre+Baskerville|Trirong:600" rel="stylesheet">
+  <title>BWA</title>
+  <meta charset='utf-8'>
+  <meta content='width=device-width, initial-scale=1' name='viewport' />
+  <meta name="author" content="Buffalo Wings Airport">
+  <meta name="description" content="Jacksonville's Premier International Airport">
+  <meta name="keywords" content="Airport, Airfare, Flights, Buffalo Wings, Buffalo Wings Airport, Jacksonville, Jacksonville Florida, Airport in Jacksonville Florida, International Flights,
+  Parking and Transportation, Long Term Parking, Short Term Parking, Economy Parking, Parking Rates, Covered Parking">
+</head>
+<body>
+  <header>
+    <div class='generalTitle'>
+      <a href='index.html'>Buffalo Wings Airport</a>
+    </div>
+    <!--  PLEASE DO NOT DELETE. STILL WORKING ON THIS AND DON'T WANT TO LOSE THIS PART
+    <div class="mobile">
+      <img src="images/parking.jpg" alt="cars" id="parking" style="margin-top:0" />
+    </div>
+    <div class="desktop">
+      <div class="center">
+        <a href="index.html">
+          <h1>Buffalo Wings Airport</h1>
+        </a>
+      </div>
+    </div>-->
+  </header>
+  <nav>
+    <div class='mobile'>
+      <button class='navbar-toggler first-button' type='button' data-toggle='collapse' onclick=toggleNav()>
+        <div class='animated-icon1'>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+      <div id='collapse' style='display: none;'>
+        <ul>
+          <li class='full-width'>
+            <a class='nav-link' href='index.html'>Home</a>
+          </li>
+          <li class='full-width'>
+            <a class='nav-link' href='flightBooking.html'>Flight and Booking</a>
+          </li>
+          <li class='full-width'>
+            <a class='nav-link' href='airportGuide.html'>Airport Guide</a>
+          </li>
+          <li class='full-width'>
+            <a class='nav-link' href='parking.html'>Parking and Transportation</a>
+          </li>
+          <li class='full-width'>
+            <a class='nav-link' href='about.html'>About Buffalo Wings</a>
+          </li>
+          <li class="full-width">
+            <a class="nav-link" href="Customer_Service.html">Customer Service</a>
+          </li>
+        </ul>
+      </div>
+      <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+      <script>
+        $(document).ready(function () {
+          $('.first-button').on('click', function () {
+              $('.animated-icon1').toggleClass('open');
+          });
+          $('.second-button').on('click', function () {
+            $('.animated-icon2').toggleClass('open');
+          });
+          $('.third-button').on('click', function () {
+            $('.animated-icon3').toggleClass('open');
+          });
+        });
+        function toggleNav() {
+          if(document.getElementById('collapse').style.display === 'none') {
+            document.getElementById('collapse').style.display = 'block';
+          } else {
+            document.getElementById('collapse').style.display = 'none';
+          }
+        }
+      </script>
+    </div>
+    <div class='desktop'>
+      <ul>
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='flightBooking.html'>Flight and Booking</a></li>
+        <li><a href='airportGuide.html'>Airport Guide</a></li>
+        <li><a href='parking.html'>Parking and Transportation </a></li>
+        <li><a href='about.html'>About Buffalo Wings</a></li>
+        <li><a href="Customer_Service.html">Customer Service</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class='parallax plxPark desktop' style='height: 500px;'>  
+      <div style='padding-top: 5em; background-color: rgba(255,255,255,0.5)'>
+        <div>
+            <h2>Parking Capacity:</h2>
+            <h4>Short term parking:</h4>
+            <div>
+              <div class="progress">
+                <span id="percent1"></span>
+                <div id="short-term"></div>
+              </div>
+            </div>
+          </div>
+          <h4>Long term parking:</h4>
+          <div class="progress">
+            <span id="percent2"></span>
+            <div id="long-term"></div>
+          </div>
+          <h4>Economy parking:</h4>
+          <div class="progress">
+            <span id="percent3"></span>
+            <div id="economy"></div>
+          </div>
+        </div>
+    </div>
+    <div class='mobileImg mobile'><img src='images/parkingGarage.jpg' alt='Garage' /></div>
+      <div class="center" style="padding-top:1em; color:white;  padding-bottom: 20px;">
+    <div class="desktop">
+      <div class="parallax" style="background-image: url('images/foo1.jfif');">
+        <div class="center" style="padding-top:1em;">
+          <div style="opacity: .8;width:80%; margin-left:10%; margin-right: 10%; padding-bottom: 15px;">
+
+            <table>
+              <tr>
+                <td>
+                  <div class="float-box">
+                    <div class="container">
+
+                      <h3><b>Short Term Parking</b></h3>
+                      <p>Ideal for travelers requiring parking less than 24 hours. The most convenient for dropping off
+                        and picking up passengers. Direct access to Transit Level.</p>
+
+                      <p><b>RATES:</b></p>
+                      <p>$2.00 for 1st hour</p>
+                      <p>$4.00 each additional hour</p>
+                      <p>$26.00 daily max</p>
+                      <p>Daily max is calculated on a 24-hour basis. All hours exceeding a 24-hour period will be
+                        charged at the hourly rate up to the daily max.</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="float-box">
+                    <div class="container">
+                      <h3><b>Long Term Parking</b></h3>
+                      <p>This section is for those who are going to be gone for more than a day. We offer vallet
+                        services and will take your car to the long term parking garage.</p>
+                      <p><b>RATES:</b></p>
+                      <p>$20.00 for 1st day</p>
+                      <p>$8.00 each additional hour</p>
+                      <p>$200.00 daily max</p>
+                      <p>The long term storage garage is protected from the weather and has ample secutriy to ensure
+                        your vehicle is safe at all times. The max time allowed to park is 30 days</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="float-box">
+                    <div class="container">
+                      <h3><b>Extended Economy Parking</b></h3>
+                      <p>The most economical lot for the traveler on long trips. Free shuttle service to/from the
+                        terminal via buses.</p>
+                      <p><b>RATES:</b></p>
+                      <p>Free 1st hour</p>
+                      <p>$2.00 for 2nd hour</p>
+                      <p>After 2 hours, the normal rate of $8.00/day will go into effect</p>
+                      <p>$8.00 daily max</p>
+                      <p>Daily maximum is calculated on a 24-hour basis.</p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="mobile">
+      <div class="parallax" style="background-image: url('images/foo1.jfif'); height:auto;">
+        <div class="center" style="padding-top:1em;">
+          <div style="opacity: .8;  padding-bottom: 15px;">
+            <ul class="box-list" style="margin-bottom: 0;">
+              <li>
+                <div class="float-box">
+                  <div class="container">
+
+                    <h3><b>Short Term Parking</b></h3>
+                    <p>Ideal for travelers requiring parking less than 24 hours. The most convenient for dropping off
+                      and picking up passengers. Direct access to Transit Level.</p>
+
+                    <p><b>RATES:</b></p>
+                    <p>$2.00 for 1st hour</p>
+                    <p>$4.00 each additional hour</p>
+                    <p>$26.00 daily max</p>
+                    <p>Daily max is calculated on a 24-hour basis. All hours exceeding a 24-hour period will be charged
+                      at the hourly rate up to the daily max.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="float-box">
+                  <div class="container">
+                    <h3><b>Long Term Parking</b></h3>
+                    <p>This section is for those who are going to be gone for more than a day. We offer vallet services
+                      and will take your car to the long term parking garage.</p>
+                    <p><b>RATES:</b></p>
+                    <p>$20.00 for 1st day</p>
+                    <p>$8.00 each additional hour</p>
+                    <p>$200.00 daily max</p>
+                    <p>The long term storage garage is protected from the weather and has ample secutriy to ensure your
+                      vehicle is safe at all times. The max time allowed to park is 30 days</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="float-box">
+                  <div class="container">
+                    <h3><b>Extended Economy Parking</b></h3>
+                    <p>The most economical lot for the traveler on long trips. Free shuttle service to/from the
+                      terminal via buses.</p>
+                    <p><b>RATES:</b></p>
+                    <p>Free 1st hour</p>
+                    <p>$2.00 for 2nd hour</p>
+                    <p>After 2 hours, the normal rate of $8.00/day will go into effect</p>
+                    <p>$8.00 daily max</p>
+                    <p>Daily maximum is calculated on a 24-hour basis.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax" id="third">
+      <div class="center scale" style="padding-top:1em; padding-bottom: 15px;">
+        <div class="float-box" style="padding-bottom: 15px; opacity: .8; margin-right: 10px; margin-left: 10px;">
+          <div class="container">
+            <h2>Helpful info:</h2>
+            <ul class="foo">
+              <li>Buffalo Wild Wings Airport parking is handicap accessible</li>
+              <li>We offer free parking for any members of the military</li>
+              <li>All parking is covered and safe from inclimate weather</li>
+              <li>We accept all major credit cards and US dollars, European Euro, British Pound, and Canadian dollar
+              </li>
+              <li>We have security measures in place to ensure your car and belongings inside your car are safe from
+                crime</li>
+            </ul>
+
+            <h2>Car Rentals</h2>
+            <p>For those who are flying in to Buffalo Wings Airport, we offer car rentals. The rentals we host in our
+              airport
+              are Enterprise and National. The rentals are a short walk from
+              the baggage claim. For more info see:
+            </p>
+            <ul
+              style="list-style-position: inside; list-style: circle; padding: 20px; margin-bottom: 0; text-align: left;">
+              <li><a href="https://www.enterprise.com/en/home.html">Enterprise</a></li>
+              <li><a href="https://www.nationalcar.com/en/home.html">National</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax" style="background-image: url('images/taxi.jpg');">
+      <div class="center" style="padding-top:1em;">
+        <div class="scroll-box"
+          style="opacity: .85; background-color: #f0f0f0;  padding-bottom: 15px;">
+          <h2>Taxi wait time:</h2>
+          <p>At Buffalo Wild Wings, we strive to provide convient means of getting around our airport.
+            We provide a taxi service to easily get around to where you need to be.There is a pickup spot at each
+            terminal.</p>
+          <div id="terminals"></div>
+          <p>Each taxi costs $5.00 USD per ride</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+      var waitTimes = "<ul id='waitTimes'>";
+      for (var i = 1; i < 7; i++) {
+        waitTimes += "<li><div class='imgContain'><div class='numberCircle'>"+i+"</div><br /><br /><b>Terminal " + i + ":   </b>" + waitTime() + " minutes</div></li>";
+      }
+      waitTimes += "</ul>"
+      document.getElementById("terminals").innerHTML = waitTimes;
+      function waitTime() {
+        return Math.floor(Math.random() * (20 - 5)) + 5;
+      }
+
+    </script>
+  </main>
+  <footer>
+    &copy; Buffalo Wings Airport & Harding University
+  </footer>
+  <script src="jquery.min.js"></script>
+</body>
+
+</html>

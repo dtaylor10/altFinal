@@ -1,0 +1,245 @@
+/* IS 270 Final Project
+Greg Blodgett, Ethan Bond, Joe Faith, HyeJin Moon, & David Taylor */
+
+/* general */
+    html, body, main, nav, div, img, header, footer, h1, h2, h3, a, ul{
+        margin: 0;
+        border: 0;
+        padding: 0;
+        outline: none;
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+        color: #000;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1em;
+        display: block;
+        text-decoration: none;
+    }
+    .generalTitle a {
+        font-family: 'Trirong', serif;
+        text-align: center;
+        font-size: 2em;
+        padding: 0.5em 0 0.5em 0;
+        background-color: #002244;
+        color: #fff;
+    }
+    nav ul {
+        list-style-type: none;
+        overflow: hidden;
+      }
+    nav li {
+        float: left;
+        display: list-item;
+    }
+    nav li a {
+        text-align: center;
+        width: auto;
+        padding: 8px 1.2em 8px 1.2em;
+        font-size: 0.8em;
+        font-family: 'Libre Baskerville', serif;
+    }
+    nav li a:hover {
+        background-color: #024;
+        color: #fff;
+    }
+    footer {
+        background-color: #024;
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        color: #468;
+    }
+    .container {
+        width: 100%;
+    }
+/* index */
+    #PP{
+        margin: 0 auto;
+        height: 30px;
+        width: 50px;
+        opacity: inherit;
+      }
+    .formTitle {
+        text-align: right;
+    }
+    .formOption {
+        text-align: left;
+    }
+    .indexDesc ul{
+        list-style-type: none;
+        text-align: center;
+    }
+    .cityTitle {
+        text-align: center;
+        font-size: 1.25em;
+    }
+    .cityDesc {
+        text-align: justify;
+    }
+/* booking */
+
+/* guide */
+    .guideHeader, .guideTitle {
+        text-align: center;
+        font-size: 3em;
+        margin: 0.5em auto;
+    }
+    .guideTitle {
+        font-weight: 700;
+        font-size: 1.5em;
+    }
+    .guideDesc, .guideContainer, .guidePanel, .restlogo {
+        margin: auto;
+        width: 95%;
+    }
+    .restlogo {
+        width: 40%;
+    }
+    .hrhalf {
+        width: 80%;
+    }
+    .hrfull {
+        border: 2px solid;
+    }
+/* parking */
+   
+/* about */
+    .collapsible {
+        background-color: rgba(187,204,221,0.5);
+        color: #000;
+        cursor: pointer;
+        padding: 1.5em;
+        font-size: 1em;
+        font-family: 'Libre Baskerville', serif;
+        width: 100%;
+        border: none;
+        text-align: left;
+        margin: 0 auto;
+        outline: none;
+    }
+    .active, .collapsible:hover {
+        background-color: rgba(187,204,221,0.5);
+    }
+    .content {
+        width: 90%;
+        margin: 0 auto;
+        text-align: justify;
+        display: none;
+        overflow: hidden;
+        background-color: #fff;
+    }
+
+@media only screen and (max-width:767px) {
+/* general */
+    .desktop {
+        display: none;
+    }
+    nav ul {
+        margin-top: -2em;
+    }
+    nav li {
+        width: 100%;
+    }
+    .mobileImg {
+        height: 200px;
+        overflow: hidden;
+    }
+
+/* index */
+
+/* booking */
+
+/* guide */
+    .guideDesc {
+        width: 90%;
+        text-align: justify;
+    }
+    .restdesc {
+        text-align: justify;
+    }
+/* parking */
+
+/* about */
+}
+
+@media only screen and (min-width: 768px) {
+/* general */
+    .mobile {
+        display: none;
+    }
+    .parallax {
+        height: 350px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+/* index */
+    .plxIndex {
+        background-image: url(../images/airplane_on_ramp.jpg);
+    }
+    .leftSide {
+        width: 45%;
+        float: left;
+    }
+    .rightSide {
+        width: 50%;
+        float: right;
+    }
+    .indexDesc {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.15em;
+    }
+    .booking .rightSide, .booking .leftSide, .booking .below, .estimateBckg, .container{
+        background-color: #abc;
+    }
+    .booking {
+        width: 90%;
+        float: left;
+    }
+    .container {
+        margin-bottom: 1em;
+    }
+/* booking */
+
+/* guide */
+    .plxGuide {
+        background-image: url(../images/terminal.jpg);
+    }
+    .guideTitle {
+        font-size: 2em;
+    }
+    .guideDesc {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.15em;
+    }
+    .parta {
+        float: left;
+        width: 50%;
+    }
+    .partb {
+        float: right;
+        width: 50%;
+    }
+    .restdesc {
+        font-size: 1.2em;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        display: block;
+    }
+    .restContainer {
+        height: 18em;
+    }
+/* parking */
+ 
+/* about */
+    .plxAbout {
+        background-image: url(../images/airplane.jpg);
+    }
+}

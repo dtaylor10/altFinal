@@ -1,0 +1,289 @@
+<!-- IS 270 Final Project
+Greg Blodgett, Ethan Bond, Joe Faith, HyeJin Moon, & David Taylor -->
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <link rel='stylesheet' type='text/css' href='css/airportStyles.css'>
+  <link rel='stylesheet' href='css/animations.css'>
+  <link rel='icon' href='images/logo.png'>
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Gentium+Basic|Libre+Baskerville|Trirong:600" rel="stylesheet">
+  <title>BWA</title>
+  <meta charset='utf-8'>
+  <meta content='width=device-width, initial-scale=1' name='viewport' />
+  <!-- Meta tags -->
+  <meta name="author" content="Buffalo Wings Airport">
+  <meta name="description" content="Jacksonville's Premier International Airport">
+  <meta name="keywords" content="Airport, Airfare, Flights, Buffalo Wings, Buffalo Wings Airport, Jacksonville, Jacksonville Florida, Airport in Jacksonville Florida, International,
+  Airport Guide, Restaurants, Retailers, Adidas, Apple, Qdoba, Panera Bread, Convenient Food">
+</head>
+<body>
+  <header>
+    <div class='generalTitle'>
+      <a href='index.html'>Buffalo Wings Airport</a>
+    </div>
+  </header>
+  <nav>
+    <div class='mobile'>
+      <button class='navbar-toggler first-button' type='button' data-toggle='collapse' onclick=toggleNav()>
+        <div class='animated-icon1'>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+      <div id='collapse' style='display: none;'>
+        <ul>
+          <li class='full-width'>
+            <a class='nav-link' href='index.html'>Home</a>
+          </li>
+          <li class='full-width'>
+            <a class='nav-link' href='flightBooking.html'>Flight and Booking</a>
+          </li>
+          <li class='full-width'>
+            <a class='nav-link' href='airportGuide.html'>Airport Guide</a>
+          </li>
+          <li class='full-width'>
+            <a class='nav-link' href='parking.html'>Parking and Transportation</a>
+          </li>
+          <li class='full-width'>
+            <a class='nav-link' href='about.html'>About Buffalo Wings</a>
+          </li>
+          <li class="full-width">
+            <a class="nav-link" href="Customer_Service.html">Customer Service</a>
+          </li>
+        </ul>
+      </div>
+      <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+      <script>
+        $(document).ready(function () {
+          $('.first-button').on('click', function () {
+              $('.animated-icon1').toggleClass('open');
+          });
+          $('.second-button').on('click', function () {
+            $('.animated-icon2').toggleClass('open');
+          });
+          $('.third-button').on('click', function () {
+            $('.animated-icon3').toggleClass('open');
+          });
+        });
+        function toggleNav() {
+          if(document.getElementById('collapse').style.display === 'none') {
+            document.getElementById('collapse').style.display = 'block';
+          } else {
+            document.getElementById('collapse').style.display = 'none';
+          }
+        }
+      </script>
+    </div>
+    <div class='desktop'>
+      <ul>
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='flightBooking.html'>Flight and Booking</a></li>
+        <li><a href='airportGuide.html'>Airport Guide</a></li>
+        <li><a href='parking.html'>Parking and Transportation </a></li>
+        <li><a href='about.html'>About Buffalo Wings</a></li>
+        <li><a href="Customer_Service.html">Customer Service</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class='parallax plxGuide desktop'></div>
+    <div class='mobileImg mobile'><img src='images/terminal.jpg' alt='Terminal' /></div>
+    <p class='guideTitle'>Welcome to Buffalo Wings Airport!</p>
+    <div class='guideDesc'>
+      <p>Here at BWA, we aim to make your trip as enjoyable and worry free as possible.
+      While you wait, please enjoy our beautiful terminals and gorgeous views.  We also
+      have a mouth-wateringly good food court, featuring restaurants like Eleven Madison
+      Park Express and Ruth's Chris Steakhouse, as well as an industry-leading shopping
+      center, which includes a Hugo Boss and Supreme.  Have a great flight, and
+      enjoy your trip!</p><br class='desktop' />
+    </div>
+    <hr class='hrfull'/>
+      <p class='guideHeader'>Restaurants</p>
+      <hr class='hrhalf'/>
+      <br class='desktop'/>
+      <div class='guidePanel'>
+        <div class='parta'>
+          <div class='restContainer'>
+            <img src='images/ruths.svg' alt='Ruths Chris Steakhouse Logo' class='restlogo' />
+            <br class='desktop' />
+            <p class='restdesc'>This elevated dining steakhouse is home to top-of-the-line, perfectly cooked steakhouse
+              and other foods.  For anyone celehrating, traveling, or just has a couple extra hours, this is a great choice.</p>
+          </div>
+          <hr class='hrhalf'/>
+          <div class='restContainer'>
+            <br class='desktop' /><br class='desktop' />
+            <img src='images/eleven.jpg' alt='Eleven Madison Park Logo' class='restlogo' />
+            <br class='desktop' />
+            <p class='restdesc'>This quick-service version of the famous Michelin starred restaurant in New York City
+              hrings the classiness and delicious food to a wider audience, with faster meals andbigger portions.
+              Do yourself a favor and try it out!</p>
+          </div>
+          <hr class='hrhalf'/>
+          <div class='restContainer'>
+            <br class='desktop' /><br class='desktop' />
+            <img src='images/cfa.svg' alt='Chick-fil-A Logo' class='restlogo' />
+            <br class='desktop' />
+            <p class='restdesc'>The cream of the crop for fast food joints, Chick-fil-A offers consistent, fast, and
+              friendly service to anyone.  Enjoy a quick bite to eat and grab a limited-time frosted key lime!</p>
+          </div>
+          <hr class='hrhalf'/>
+          <div class='restContainer'>
+            <br class='desktop' /><br class='desktop' />
+            <img src='images/columbus.jpg' alt='Columbus Logo' class='restlogo' />
+            <br class='desktop' /><br class='desktop' />
+            <p class='restdesc'>This high-end coffee joint offers some of the finest roasted and best hrewed coffee
+              beans in the world.  Grab a cappucino, a fresh pastry, and get going!</p>
+          </div>
+        </div>
+        <hr class='mobile' />
+        <div class='partb'>
+          <div class='restContainer'>
+            <img src='images/olive.svg' alt='Olive Garden Logo' class='restlogo' />
+            <br class='desktop' />
+            <p class='restdesc'>Olive Garden is a delicious Italian food chain that offers a great family or date night
+              environment.  Their reasonably priced menu offers a wide variety and is sure to please anyone.</p>
+          </div>
+          <hr class='hrhalf'/>
+          <div class='restContainer'>
+            <br class='desktop' /><br class='desktop' />
+            <img src='images/chilis.png' alt='Chilis Logo' class='restlogo' />
+            <br class='desktop' />
+            <p class='restdesc'>This classic American restaurant serves everything you're craving.  The tex-mex style
+              and well-priced menu make Chili's a great choice for anyone.</p>
+          </div>
+          <hr class='hrhalf'/>
+          <div class='restContainer'>
+            <br class='desktop' /><br class='desktop' /><br class='desktop' /><br class='desktop' />
+            <img src='images/qdoba.jpeg' alt='Qdoba Logo' class='restlogo' />
+            <br class='desktop' /><br class='desktop' />
+            <p class='restdesc'>A fantastic option for the ravished on the run, Qdoba's specialty is quick-service
+              Mexican food, with huge burritos and delicious salsa.  Head here and enjoy!
+          </div>
+          <hr class='hrhalf'/>
+          <div class='restContainer'>
+            <img src='images/panera.jpg' alt='Panera Logo' class='restlogo' />
+            <p class='restdesc'>This fast-casual deli and bakery is home to everyone.  Their inviting atmosphere
+              and fresh-baked hreads make this a great choice for anyone at any time.</p>
+          </div>
+        </div>
+      </div>
+      <br class='desktop' /><br class='desktop' />
+      <hr class='hrfull mobile' /><hr class='hrhalf desktop' />
+      <p class='guideHeader'>Retail Stores</p>
+      <hr class='hrhalf'/>
+      <div class='guidePanel'>
+        <div class='parta'>
+          <div class='restContainer'>
+            <img src='images/adidas.svg' alt='Adidas Logo' class='restlogo' />
+            <br class='desktop' />
+            <p class='restdesc'>This popular sportswear brand sells trending streetwear, comfortable casual apparel,
+              and has a very youthfull feel and atmosphere.  Great for anyone on a trip or needing some shoes.</p>
+          </div>
+          <hr class='hrhalf'/>
+          <div class='restContainer'>
+            <img src='images/apple.svg' alt='Apple Logo' class='restlogo' style='width: 25%;' />
+            <p class='restdesc'>Home to the premiere smartphone, gorgeous storefronts, and impeccable design, Apple sells
+              high end technology and accessories.  Our store also has an incredible sales team who can help with any questions
+              you may have about a device.</p>
+          </div>
+          <hr class='hrhalf'/>
+          <div class='restContainer'>
+            <img src='images/best.svg' alt='Best Buy Logo' class='restlogo' />
+            <br class='desktop' />
+            <p class='restdesc'>Best Buy is the largest electronics chain in the US, and this small storefront offers all kinds of
+              tech - from headphone and speakers to laptops to portable batteries, whatever you need for your flight is here.</p>
+          </div>
+          <hr class='hrhalf'/>
+          <div class='restContainer'>
+            <br class='desktop' />
+            <img src='images/boss.svg' alt='Hugo Boss Logo' class='restlogo' />
+            <br class='desktop' />
+            <p class='restdesc'>This luxury fashion chain offers the highest quality clothing around, and in-house tailoring to make
+            the suit fit just right.  Stop by and you may just find your new favorite look.</p>
+          </div>
+        </div>
+        <hr class='hrhalf mobile' />
+        <div class='partb'>
+          <div class='restContainer'>
+            <br class='desktop' /><br class='desktop' /><br class='desktop' />
+            <img src='images/gucci.svg' alt='Gucci Logo' class='restlogo' />
+            <br class='desktop' /><br class='desktop' />
+            <p class='restdesc'>A high fashion chain aimed at the younger generation, Gucci has both over-the-top streetwear and classy
+              formal attire.  Even if you don't buy anything, check this place out for a one-of-a-kind experience.</p>
+          </div>
+          <hr class='hrhalf'/>
+          <div class='restContainer'>
+            <br class='desktop' />
+            <img src='images/jcrew.svg' alt='J Crew Logo' class='restlogo' />
+            <br class='desktop' />
+            <p class='restdesc'>J. Crew is the embodiment of classic American style.  With outfits for every age, gender, and
+              personality, J. Crew should be your first stop when looking for a breezy summer day, date night, business meeting,
+              or any other occasion you can think of.</p>
+          </div>
+          <hr class='hrhalf'/>
+          <div class='restContainer'>
+            <br class='desktop' />
+            <img src='images/kate.svg' alt='Kate Spade New York Logo' class='restlogo' />
+            <br class='desktop' /><br class='desktop' />
+            <p class='restdesc'>This popular women's boutique offers high quality purses and apparel for great prices, with fun
+              styling and quirky designs.  Stop in and find yourself a new jacket or crossbody that'll be sure to impress!</p>
+          </div>
+          <hr class='hrhalf'/>
+          <div class='restContainer'>
+              <br class='desktop' />
+            <img src='images/supreme.svg' alt='Supreme Logo' class='restlogo' />
+            <br class='desktop' />
+            <p class='restdesc'>Supreme is the ultimate trending brand.  Popular among everyone in touch with their stylish side,
+              Supreme has limited-run and often very valuable tshirts, jackets, shoes, and accessories.</p>
+          </div>
+        </div>
+      </div>
+      <hr class='hrfull mobile' /><hr class='hrhalf desktop' />
+      <p class='guideHeader'>Entertainment</p>
+      <hr class='hrhalf'/>
+      <div class='guidePanel'>
+        <div class='parta'>
+          <div class='restContainer'>
+            <img src='images/golf.svg' alt='Mini Golf' class='restlogo' style='width: 25%;' />
+            <br class='desktop' />
+            <p class='restdesc'>This exciting themed mini golf course has eighteen sprawling holes, with innumerable obstacles 
+              and intense competition between the various teams.  Try to make the bonus shots and win a prize!</p>
+          </div>
+          <hr class='hrhalf'/>
+          <div class='restContainer'>
+            <img src='images/laser.svg' alt='Laser Tag' class='restlogo' style='width: 25%;' />
+            <p class='restdesc'>Our 1.5 acre laser tag arena facilitates a real-life 'battle royale' for all who enter.  This 
+              fast-paced and extremely intense game is a blast for anyone.  Capture the flag and reach the goal to win!</p>
+          </div>
+        </div>
+        <hr class='hrhalf mobile' />
+        <div class='partb'>
+          <div class='restContainer'>
+            <br class='desktop' /><br class='desktop' /><br class='desktop' />
+            <img src='images/vr.svg' alt='Oculus Virtual Reality' class='restlogo' />
+            <br class='desktop' />
+            <p class='restdesc'>This state-of-the-art virtual reality facility allows teams of four, six, or eight to embark on 
+              a mission to mars, a battle for the fate of Middle Earth, or explore the deep sea.  Check this one out for an experience 
+              you'll never forget.</p>
+          </div>
+          <hr class='hrhalf'/>
+          <div class='restContainer'>
+            <br class='desktop' /><br class='desktop' />
+            <img src='images/theatre.svg' alt='Movie Theatre' class='restlogo' />
+            <br class='desktop' />
+            <p class='restdesc'>Our own theatre technology, made by IMAX, allows you to see the incredible worlds of any of the most 
+              recent films all around you, with three-dimensional sound and (with supported films) realistic smells, you can experience 
+              new worlds and ideas like nowhere else.</p>
+          </div>
+        </div>
+      </div>
+    <hr class='hrfull'/>
+    <br class='mobile' />
+  </main>
+  <footer>
+      &copy; Buffalo Wings Airport & Harding University
+  </footer>
+</body>
+</html>

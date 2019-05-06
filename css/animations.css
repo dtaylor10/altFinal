@@ -94,15 +94,15 @@ Greg Blodgett, Ethan Bond, Joe Faith, HyeJin Moon, & David Taylor */
     height: 100%;
     backface-visibility: hidden;
   }
-  .flip-card-front {
-    background-color: #bbb;
-    color: black;
-  }
   .flip-card-back {
-    background-color: #42a1f4;
+    background-color: #024;
     color: white;
     transform: rotateY(180deg);
     font-size: 28px;
-    overflow-y: scroll;
+    overflow-y: auto;
+  }
+  .flip-card-back a {
+    background-color: #024;
+    color: #fff;
   }
 }

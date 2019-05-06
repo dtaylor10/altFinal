@@ -2,20 +2,21 @@
 Greg Blodgett, Ethan Bond, Joe Faith, HyeJin Moon, & David Taylor -->
 
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
+
 <head>
-  <link rel='stylesheet' type='text/css' href='css/airportStyles.css'>
-  <link rel='stylesheet' href='css/animations.css'>
-  <link rel='icon' href='images/logo.png'>
+  <link rel="stylesheet" type="text/css" href="css/parking.css" />
+  <link rel="stylesheet" type="text/css" href="css/animations.css" />
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Gentium+Basic|Libre+Baskerville|Trirong:600" rel="stylesheet">
   <title>BWA</title>
-  <meta charset='utf-8'>
-  <meta content='width=device-width, initial-scale=1' name='viewport' />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <meta name="author" content="Buffalo Wings Airport">
   <meta name="description" content="Jacksonville's Premier International Airport">
   <meta name="keywords" content="Airport, Airfare, Flights, Buffalo Wings, Buffalo Wings Airport, Jacksonville, Jacksonville Florida, Airport in Jacksonville Florida, International Flights,
   Parking and Transportation, Long Term Parking, Short Term Parking, Economy Parking, Parking Rates, Covered Parking">
 </head>
+
 <body>
   <header>
     <div class='generalTitle'>
@@ -34,103 +35,136 @@ Greg Blodgett, Ethan Bond, Joe Faith, HyeJin Moon, & David Taylor -->
     </div>-->
   </header>
   <nav>
-    <div class='mobile'>
-      <button class='navbar-toggler first-button' type='button' data-toggle='collapse' onclick=toggleNav()>
-        <div class='animated-icon1'>
+
+    <div class="mobile">
+
+
+      <button class="navbar-toggler first-button" type="button" data-toggle="collapse" onclick=toggleNav()>
+        <div class="animated-icon1">
           <span></span>
           <span></span>
           <span></span>
         </div>
       </button>
-      <div id='collapse' style='display: none;'>
+      <div id="collapse" style="display:none; ">
+
         <ul>
-          <li class='full-width'>
-            <a class='nav-link' href='index.html'>Home</a>
+          <li class="full-width">
+            <a class="nav-link" href="index.html">Home</a>
           </li>
-          <li class='full-width'>
-            <a class='nav-link' href='flightBooking.html'>Flight and Booking</a>
+          <li class="full-width">
+            <a class="nav-link" href="flightBooking.html">Flight and Booking</a>
           </li>
-          <li class='full-width'>
-            <a class='nav-link' href='airportGuide.html'>Airport Guide</a>
+          <li class="full-width">
+            <a class="nav-link" href="airportGuide.html">Airport Guide</a>
           </li>
-          <li class='full-width'>
-            <a class='nav-link' href='parking.html'>Parking and Transportation</a>
+          <li class="full-width">
+            <a class="nav-link" href="parking.html">Parking and Trasportation</a>
           </li>
-          <li class='full-width'>
-            <a class='nav-link' href='about.html'>About Buffalo Wings</a>
+          <li class="full-width">
+            <a class="nav-link" href="about.html">About Buffalo Wings</a>
           </li>
         </ul>
+
+
+
+        <!--<a href="index.html" style="text-decoration: none; color:white; float: right; z-index: 100; font-size: 4.3vw;">
+          <h2 class="hide" style="font-weight: normal; margin:0;">Buffalo Wild Wings Airport</h2>
+        </a>
+        <div class="full-width">
+          <h2 class="hide" style="z-index: 1000; margin-top: 5em; margin-left:auto; margin-right:auto;">Parking and
+            Transportation</h2>
+        </div>-->
       </div>
-      <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script>
         $(document).ready(function () {
+          var random = Math.random() * 90;
+          $("#short-term").css("width", (random + "%"))
+          document.getElementById("percent1").innerHTML = Number(random).toFixed(0) + "%";
+          var random1 = Math.random() * 90;
+          $("#long-term").css("width", (random1 + "%"))
+          document.getElementById("percent2").innerHTML = Number(random1).toFixed(0) + "%";
+          var random2 = Math.random() * 90;
+          $("#economy").css("width", (random2 + "%"))
+          document.getElementById("percent3").innerHTML = Number(random2).toFixed(0) + "%";
+        });
+        $(document).ready(function () {
+
           $('.first-button').on('click', function () {
-              $('.animated-icon1').toggleClass('open');
+            $('.animated-icon1').toggleClass('open');
           });
           $('.second-button').on('click', function () {
+
             $('.animated-icon2').toggleClass('open');
           });
           $('.third-button').on('click', function () {
+
             $('.animated-icon3').toggleClass('open');
           });
         });
         function toggleNav() {
-          if(document.getElementById('collapse').style.display === 'none') {
-            document.getElementById('collapse').style.display = 'block';
+          if (document.getElementById("collapse").style.display === "none") {
+            document.getElementById("collapse").style.display = "block";
+            /*Hide Title*/
+            $(".hide").css("opacity", "0")
           } else {
-            document.getElementById('collapse').style.display = 'none';
+            document.getElementById("collapse").style.display = "none";
+            /*Show title*/
+            $(".hide").css("opacity", "1")
           }
         }
       </script>
     </div>
-    <div class='desktop'>
+    <div class="desktop">
       <ul>
-        <li><a href='index.html'>Home</a></li>
-        <li><a href='flightBooking.html'>Flight and Booking</a></li>
-        <li><a href='airportGuide.html'>Airport Guide</a></li>
-        <li><a href='parking.html'>Parking and Transportation </a></li>
-        <li><a href='about.html'>About Buffalo Wings</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="flightBooking.html">Flight and Booking</a></li>
+        <li><a href="airportGuide.html">Airport Guide</a></li>
+        <li><a href="parking.html">Parking and Trasportation </a></li>
+        <li><a href="about.html">About Buffalo Wings</a></li>
       </ul>
     </div>
   </nav>
   <main>
-    <div class='parallax plxPark desktop' style='height: 500px;'>  
-      <div style='padding-top: 5em; background-color: rgba(255,255,255,0.5)'>
+    <div class="parallax" style="background-image: url('images/parkingGarage.jpg');">
+      <div class="center" style="padding-top:1em; color:white;  padding-bottom: 20px;">
         <div>
-            <h2>Parking Capacity:</h2>
-            <h4>Short term parking:</h4>
-            <div>
-              <div class="progress">
-                <span id="percent1"></span>
-                <div id="short-term"></div>
-              </div>
+          <h2>Parking Capacity:</h2>
+          <h4>Short term parking:</h4>
+          <div class="center">
+            <div class="progress">
+              <span id="percent1"></span>
+              <div id="short-term"></div>
             </div>
           </div>
-          <h4>Long term parking:</h4>
-          <div class="progress">
-            <span id="percent2"></span>
-            <div id="long-term"></div>
-          </div>
-          <h4>Economy parking:</h4>
-          <div class="progress">
-            <span id="percent3"></span>
-            <div id="economy"></div>
-          </div>
         </div>
+        <h4>Long term parking:</h4>
+        <div class="progress">
+          <span id="percent2"></span>
+          <div id="long-term"></div>
+        </div>
+        <h4>Economy parking:</h4>
+        <div class="progress">
+          <span id="percent3"></span>
+          <div id="economy"></div>
+        </div>
+      </div>
     </div>
-    <div class='mobileImg mobile'><img src='images/parkingGarage.jpg' alt='Garage' /></div>
-      <div class="center" style="padding-top:1em; color:white;  padding-bottom: 20px;">
     <div class="desktop">
       <div class="parallax" style="background-image: url('images/foo1.jfif');">
         <div class="center" style="padding-top:1em;">
-          <div style="opacity: .8;width:80%; margin-left:10%; margin-right: 10%; padding-bottom: 15px;">
+          <!--padding-bottom: 15px;-->
+          <div style="opacity: .8;width:80%; margin-left:10%; margin-right: 10%; ">
 
             <table>
               <tr>
-                <td>
+                <td style="height:100%; padding:0;">
                   <div class="float-box">
-                    <div class="container">
-
+                    <div class="container" style="height:100%;">
+                      <br class='desktop' /><br class='desktop' />
                       <h3><b>Short Term Parking</b></h3>
                       <p>Ideal for travelers requiring parking less than 24 hours. The most convenient for dropping off
                         and picking up passengers. Direct access to Transit Level.</p>
@@ -144,9 +178,10 @@ Greg Blodgett, Ethan Bond, Joe Faith, HyeJin Moon, & David Taylor -->
                     </div>
                   </div>
                 </td>
-                <td>
+                <td style="height:100%;">
                   <div class="float-box">
                     <div class="container">
+                      <br class='desktop' /><br class='desktop' />
                       <h3><b>Long Term Parking</b></h3>
                       <p>This section is for those who are going to be gone for more than a day. We offer vallet
                         services and will take your car to the long term parking garage.</p>
@@ -159,7 +194,7 @@ Greg Blodgett, Ethan Bond, Joe Faith, HyeJin Moon, & David Taylor -->
                     </div>
                   </div>
                 </td>
-                <td>
+                <td style="height:100%;">
                   <div class="float-box">
                     <div class="container">
                       <h3><b>Extended Economy Parking</b></h3>
@@ -262,8 +297,8 @@ Greg Blodgett, Ethan Bond, Joe Faith, HyeJin Moon, & David Taylor -->
             </p>
             <ul
               style="list-style-position: inside; list-style: circle; padding: 20px; margin-bottom: 0; text-align: left;">
-              <li><a href="https://www.enterprise.com/en/home.html">Enterprise</a></li>
-              <li><a href="https://www.nationalcar.com/en/home.html">National</a></li>
+              <li><a href="https://www.enterprise.com/en/home.html" style='color: #000;'>Enterprise</a></li>
+              <li><a href="https://www.nationalcar.com/en/home.html" style='color: #000;'>National</a></li>
             </ul>
 
           </div>

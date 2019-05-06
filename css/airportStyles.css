@@ -106,8 +106,8 @@ Greg Blodgett, Ethan Bond, Joe Faith, HyeJin Moon, & David Taylor */
    
 /* about */
     .collapsible {
-        background-color: rgba(187,204,221,0.5);
-        color: #000;
+        background-color: #024;
+        color: #fff;
         cursor: pointer;
         padding: 1.5em;
         font-size: 1em;
@@ -119,7 +119,7 @@ Greg Blodgett, Ethan Bond, Joe Faith, HyeJin Moon, & David Taylor */
         outline: none;
     }
     .active, .collapsible:hover {
-        background-color: rgba(187,204,221,0.5);
+        background-color: #024;
     }
     .content {
         width: 90%;
@@ -127,12 +127,8 @@ Greg Blodgett, Ethan Bond, Joe Faith, HyeJin Moon, & David Taylor */
         text-align: justify;
         display: none;
         overflow: hidden;
+        color: #000;
         background-color: #fff;
-    }
-    .leftSide img, .rightSide img {
-        width: auto;
-        height: 200px;
-        text-align: center;
     }
 @media only screen and (max-width:767px) {
 /* general */

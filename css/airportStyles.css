@@ -61,10 +61,10 @@ Greg Blodgett, Ethan Bond, Joe Faith, HyeJin Moon, & David Taylor */
         opacity: inherit;
       }
     .formTitle {
-        text-align: right;
+        text-align: center;
     }
     .formOption {
-        text-align: left;
+        text-align: center;
     }
     .indexDesc ul{
         list-style-type: none;

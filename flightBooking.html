@@ -3,108 +3,99 @@ Greg Blodgett, Ethan Bond, Joe Faith, HyeJin Moon, & David Taylor -->
 
 <!DOCTYPE html>
 <html lang='en'>
-<head>
-  <link rel='stylesheet' type='text/css' href='css/airportStyles.css'>
-  <link rel='stylesheet' href='css/animations.css'>
-  <link rel='icon' href='images/logo.png'>
-  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Gentium+Basic|Libre+Baskerville|Trirong:600" rel="stylesheet">
-  <title>BWA</title>
-  <meta charset='utf-8'>
-  <meta content='width=device-width, initial-scale=1' name='viewport' />
-  <meta name="author" content="Buffalo Wings Airport">
-  <meta name="description" content="Jacksonville's Premier International Airport">
-  <meta name="keywords" content="Airport, Airfare, Flights, Buffalo Wings, Buffalo Wings Airport, Jacksonville, Jacksonville Florida, Airport in Jacksonville Florida, International Flights, Ticket Purchase, Airlines, Flight Arrival,
-  Flight Departure, Ticket Class, Economy, Business, First Class">
-</head>
-<body>
-  <header>
-    <div class='generalTitle'>
-      <a href='index.html'>Buffalo Wings Airport</a>
-    </div>
-  </header>
-  <nav>
-    <div class='mobile'>
-      <button class='navbar-toggler first-button' type='button' data-toggle='collapse' onclick=toggleNav()>
-        <div class='animated-icon1'>
-          <span></span>
-          <span></span>
-          <span></span>
+  <head>
+    <link rel='stylesheet' type='text/css' href='css/airportStyles.css'>
+    <link rel='stylesheet' href='css/animations.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='icon' href='images/logo.png'>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Gentium+Basic|Libre+Baskerville|Trirong:600" rel="stylesheet">
+    <title>BWA</title>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1' name='viewport' />
+    <meta name="author" content="Buffalo Wings Airport">
+    <meta name="description" content="Jacksonville's Premier International Airport">
+    <meta name="keywords" content="Airport, Airfare, Flights, Buffalo Wings, Buffalo Wings Airport, Jacksonville, Jacksonville Florida, Airport in Jacksonville Florida, International Flights,
+    Purchase Tickets, Los Angeles, Dallas, Dublin, Edinburgh, Atlanta, London, Frankfurt, Paris, Amsterdam, Barcelona">
+  </head>
+  <body>
+    <header>
+      <div class='generalTitle'>
+        <a href='index.html'>Buffalo Wings Airport</a>
+      </div>
+    </header>
+    <nav>
+      <div class='mobile'>
+        <button class='navbar-toggler first-button' type='button' data-toggle='collapse' onclick=toggleNav()>
+          <div class='animated-icon1'>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <div id='collapse' style='display: none;'>
+          <ul>
+            <li class='full-width'>
+              <a class='nav-link' href='index.html'>Home</a>
+            </li>
+            <li class='full-width'>
+              <a class='nav-link' href='flightBooking.html'>Flight and Booking</a>
+            </li>
+            <li class='full-width'>
+              <a class='nav-link' href='airportGuide.html'>Airport Guide</a>
+            </li>
+            <li class='full-width'>
+              <a class='nav-link' href='parking.html'>Parking and Transportation</a>
+            </li>
+            <li class='full-width'>
+              <a class='nav-link' href='about.html'>About Buffalo Wings</a>
+            </li>
+          </ul>
         </div>
-      </button>
-      <div id='collapse' style='display: none;'>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <script>
+          $(document).ready(function () {
+            $('.first-button').on('click', function () {
+                $('.animated-icon1').toggleClass('open');
+            });
+            $('.second-button').on('click', function () {
+              $('.animated-icon2').toggleClass('open');
+            });
+            $('.third-button').on('click', function () {
+              $('.animated-icon3').toggleClass('open');
+            });
+          });
+          function toggleNav() {
+            if(document.getElementById('collapse').style.display === 'none') {
+              document.getElementById('collapse').style.display = 'block';
+            } else {
+              document.getElementById('collapse').style.display = 'none';
+            }
+          }
+        </script>
+      </div>
+      <div class='desktop'>
         <ul>
-          <li class='full-width'>
-            <a class='nav-link' href='index.html'>Home</a>
-          </li>
-          <li class='full-width'>
-            <a class='nav-link' href='flightBooking.html'>Flight and Booking</a>
-          </li>
-          <li class='full-width'>
-            <a class='nav-link' href='airportGuide.html'>Airport Guide</a>
-          </li>
-          <li class='full-width'>
-            <a class='nav-link' href='parking.html'>Parking and Transportation</a>
-          </li>
-          <li class='full-width'>
-            <a class='nav-link' href='about.html'>About Buffalo Wings</a>
-          </li>
+          <li><a href='index.html'>Home</a></li>
+          <li><a href='flightBooking.html'>Flight and Booking</a></li>
+          <li><a href='airportGuide.html'>Airport Guide</a></li>
+          <li><a href='parking.html'>Parking and Transportation </a></li>
+          <li><a href='about.html'>About Buffalo Wings</a></li>
         </ul>
       </div>
-      <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-      <script>
-        $(document).ready(function () {
-          $('.first-button').on('click', function () {
-              $('.animated-icon1').toggleClass('open');
-          });
-          $('.second-button').on('click', function () {
-            $('.animated-icon2').toggleClass('open');
-          });
-          $('.third-button').on('click', function () {
-            $('.animated-icon3').toggleClass('open');
-          });
-        });
-        function toggleNav() {
-          if(document.getElementById('collapse').style.display === 'none') {
-            document.getElementById('collapse').style.display = 'block';
-          } else {
-            document.getElementById('collapse').style.display = 'none';
-          }
-        }
-      </script>
-    </div>
-    <div class='desktop'>
-      <ul>
-        <li><a href='index.html'>Home</a></li>
-        <li><a href='flightBooking.html'>Flight and Booking</a></li>
-        <li><a href='airportGuide.html'>Airport Guide</a></li>
-        <li><a href='parking.html'>Parking and Transportation </a></li>
-        <li><a href='about.html'>About Buffalo Wings</a></li>
-      </ul>
-    </div>
-  </nav>
-  <main>
-    <div class='parallax plxBook desktop'></div>
-    <div class='mobileImg mobile'><img src='images/bookingmain.jpg' alt='Terminal' /></div>
-    <div class="booking">
-      <!-- Begin ticket purchasing form -->
+    </nav>
+    <main>
       <div class='parallax plxBook desktop'></div>
       <div class='mobileImg mobile'><img src='images/bookingmain.jpg' alt='Airplane On Ramp' /></div>
         <div class='leftSide'>
           <div class='why'>
             <br class='desktop' />
-            <p class='guideTitle'>Why Fly Buffalo Wings?</p>
+            <div class="desktop">
+            <p class='guideTitle'>Have a long Layover?</p>
             <div class='indexDesc guideDesc'>
-                <h1>Have a long Layover? </h1>
-                <p style="font-size: 2em;"> Visit our <a href="airportGuide.html" style="font-size:1em;">Airport Guide</a>
-                  page to see all the wonderful resturants, entertainment, shopping, and lodging we offer!</p>
-              </div>
-              <ul>
-                <li>World-Class Service</li>
-                <li>Enchanting International Destinations</li>
-                <li>Industry-Leading Reduced Emmissions Aircraft</li>
-              </ul>
-              <p style='text-align: center; font-weight: bold;'>Fly with us and you'll never go back!</p>
+              <p style="font-size: 2em;"> Visit our <a href="airportGuide.html" style="font-size:1em; color:black;">
+                Airport Guide</a>page to see all the wonderful resturants, entertainment, shopping, and lodging we offer!</p>
               <br />
+            </div>
             </div>
           </div>
         </div>
@@ -171,82 +162,33 @@ Greg Blodgett, Ethan Bond, Joe Faith, HyeJin Moon, & David Taylor -->
             </div>
           </div>
       </div>
+      <br class='desktop' /><br /> 
       <hr class='hrhalf' />
-      <br class='desktop' />
-          <script>
-            function validate() {
-              if (document.payment.fName.value == "") {
-                alert("Please provide your first name!");
-                document.payment.fName.focus();
-                return false;
-              }
-              if (document.payment.lName.value == "") {
-                alert("Please provide your last name!");
-                document.paynment.fName.focus();
-                return false;
-              }
-              if (document.payment.mName.value == "") {
-                alert("Please provide your middle initial!");
-                document.payment.fName.focus();
-                return false;
-              }
-              if (document.payment.email.value == "") {
-                alert("Please provide your Email!");
-                document.payment.EMail.focus();
-                return false;
-              }
-              var re = new RegExp(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im);
-              if (!re.test(document.payment.phone.value)) {
-                alert("Please provide your phone number in the format # ### ### ####.");
-                document.payment.phone.focus();
-                return false;
-              }
-              var reg = new RegExp(/^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/);
-              if (document.payment.DOB.value == "" || !reg.test(document.payment.DOB.value)) {
-                alert("Please provide your DOB!");
-                return false;
-              }
-              return (true);
-            }
-            // Script to take user to paypal to collect payment
-        document.getElementById("$payment").onclick = function () {
-          location.href = "https://www.paypal.com/us/home";
-        }
-          </script>
-      <br />
-      <br />
-      <br />
-    </div>
-        <hr>
         <h1 style="text-align: center; font-size: 3em;">Airlines We Support</h1>
-        <hr>
-        <div class="American Airlines Logo">
+        <div class="leftSide">
           <a href="https://www.aa.com/homePage.do" target="_blank">
-            <img src="images/american.png" alt="American Airline Link" style="width:100%;" />
+            <img src="images/american.png" alt="American Airline Link" style="width:75%;" />
           </a>
         </div>
-        <hr>
-        <div class="AirFrance Logo">
+        <div class="leftSide Logo">
           <a href="https://www.airfrance.us/" target="_blank">
-            <img src="images/airfrance.svg" alt="Air France Airline Link" style="width:100%;" />
+            <img src="images/airfrance.svg" alt="Air France Airline Link" style="width:75%;" />
           </a>
         </div>
-        <hr>
-        <div class="Cathay Pacific Airlines Logo">
+        
+        <div class="rightSide" style="border-left: 3px solid black; padding:2px;">
           <a href="https://www.cathaypacific.com/cx/en_US.html" target="_blank">
-            <img src="images/cathy.svg" alt="Cathy Airline Link" style="width:100%;" />
+            <img src="images/cathy.svg" alt="Cathy Airline Link" style="width:75%;" />
           </a>
         </div>
-        <hr>
-        <div class="Delta Airlines Logo">
+        <div class="rightSide" style="border-left: 3px solid black; padding: 2px;">
           <a href="https://www.delta.com/" target="_blank">
-            <img src="images/delta.svg" alt="Delta Airline Link" style="width:100%;" />
+            <img src="images/delta.svg" alt="Delta Airline Link" style="width:75%;" />
           </a>
         </div>
-        <hr>
-        <div class="Swiss Airlines Logo">
+        <div class="mobile">
           <a href="https://www.swiss.com/us/en#" target="_blank">
-            <img src="images/airswiss.svg" alt="Swiss Airline Link" />
+            <img src="images/airswiss.svg" alt="Swiss Airline Link" style="width:75%;" />
           </a>
         </div>
   </main>

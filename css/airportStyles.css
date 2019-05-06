@@ -204,6 +204,9 @@ Greg Blodgett, Ethan Bond, Joe Faith, HyeJin Moon, & David Taylor */
         margin-bottom: 1em;
     }
 /* booking */
+.plxBook{
+    background-image: url(../images/bookingmain.jpg);
+}
 
 /* guide */
     .plxGuide {

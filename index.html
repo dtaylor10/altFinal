@@ -121,7 +121,7 @@ Greg Blodgett, Ethan Bond, Joe Faith, HyeJin Moon, & David Taylor -->
           <div class='rightSide'>
             <form>
               <p class='formOption'>
-                <select name='City'>
+                <select name='city'>
                   <option value='LA'>Los Angeles, California</option>
                   <option value="Dallas">Dallas, Texas</option>
                   <option value="Atlanta">Atlanta, Georgia</option>
@@ -153,7 +153,7 @@ Greg Blodgett, Ethan Bond, Joe Faith, HyeJin Moon, & David Taylor -->
           <br /><br />
         </div>
         <div class='below'>
-          <button type="button" Onclick="document.getElementById('ticket_cost').innerHTML = RndInteger(150,8000)"
+          <button type="button" onclick="document.getElementById('ticket_cost').innerHTML = RndInteger(150, 5000)"
             style="margin-left: 12%;">Calculate Price</button>
           <div class='container' style="text-align: center; padding-bottom: 40px;">
             <p>Your ticket price in USD($) is: </p>
@@ -167,6 +167,35 @@ Greg Blodgett, Ethan Bond, Joe Faith, HyeJin Moon, & David Taylor -->
             function RndInteger(min, max) {
               return Math.floor(Math.random() * (max - min)) + min;
             };
+            var map = new Map();
+            map.set("LA", [75, 125, 150]);
+            map.set("DA", [40, 75, 120]);
+            map.set("London", [90, 110, 160]);
+            map.set("Paris", [100, 120, 170]);
+            map.set("Amsterdam", [150, 210, 280]);
+            map.set("Barcelona", [140, 200, 250]);
+            map.set("Dublin", [130, 190, 240]);
+            map.set("Frankfurt", [135, 160, 190]);
+            map.set("Edinburgh", [135, 160, 190]);
+            map.set("Atlanta", [135, 160, 190]);
+            function calPrice() {
+              var element = document.getElementsByName("city");
+              var cityName = element.options[element.selectedIndex].value;
+              var ticketType = document.getElementsByName('ticket');
+              var index = -1;
+              var passengers = document.getElementById("numPassengers").value;
+              for (var i = 0, length = ticketType.length; i < length; i++) {
+                if (ticketType[i].checked) {
+                  index = i;
+                  break;
+                }
+              }
+              var cost = (map.get(cityName)[i] * passengers);
+              if (isNaN(cost)) {
+                return "Please enter ticket type and number of passengers"
+              }
+              return "$" + cost + ".00";
+            }
           </script>
         </div>
       </div>

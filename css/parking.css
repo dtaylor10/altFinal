@@ -529,8 +529,15 @@ color:#f8f9fa;
   columns: 1;
   list-style-position: inside;
 }
+tr td {
+  width: 30%;
+  height: auto;
+}
 .container {
   padding: 2px 16px;
+}
+main {
+  padding: 0;
 }
 main ul {
   list-style: none;
